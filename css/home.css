@@ -1,0 +1,115 @@
+/*Page d'acceuil*/
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100px;
+    background-color: grey;
+    justify-content: space-around;
+}
+.barre_back{
+    height: 100px;
+    z-index: -2;
+}
+.header_bt{
+    line-height: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.hvr_boutton:hover{
+    color: white;
+}
+.h_banner{
+    height: 500px;
+    background-color: green;
+}
+.h_conteneur_block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.h_block{
+    width: 20%;
+    min-width: 370px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+}
+.h_block1{
+    width: 20%;
+    min-width: 370px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+}
+.h_about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}   
+.h_conteneur_about{
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+}
+.h_titre{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.h_trait{
+    width: 200px;
+    height: 50px;
+    border-top: solid 2px black;
+
+}
+.h_desc{
+    text-align: center;
+    width: 40%;
+}
+.h_barre_triangle{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.triangle{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 60px 85px 0 85px;
+border-color: #ffffff transparent transparent transparent;
+}
+.h_how{
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}   
+.h_conteneur_how{
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+}
+.h_bloc{
+    width: 100%;
+    height: 300px;
+}
