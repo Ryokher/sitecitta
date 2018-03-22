@@ -1,0 +1,137 @@
+/* Page de contact */
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100px;
+    background-color: grey;
+    justify-content: space-around;
+}
+.barre_back{
+    height: 100px;
+    z-index: -2;
+}
+.header_bt{
+    line-height: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.hvr_boutton:hover{
+    color: white;
+}
+
+.c_social_medias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.c_medias {
+    width: 70px;
+    height: 70px;
+    max-width: 100%;
+    border: 1px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c_medias_svg {
+    width: 50px;
+    height: 50px;
+}
+
+.c_block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+
+.c_address {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 15px;
+    width: 40%;
+    text-align-last: center;
+    text-align: justify;
+}
+
+.c_title {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.c_subtitle1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 40%;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.c_subtitle2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 40%;
+    text-align-last: center;
+    text-align: justify;
+}
+
+.c_desc {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    width: 40%;
+    text-align: justify;
+    text-align-last: center;
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+::-webkit-input-placeholder {
+    color: grey;
+    font-size: 14px;
+}
+
+::-moz-placeholder {
+    color: grey;
+    font-size: 14px;
+}
+
+:-ms-input-placeholder {
+    color: grey;
+    font-size: 14px;
+}
+
+:-moz-placeholder {
+    color: grey;
+    font-size: 14px;
+}
