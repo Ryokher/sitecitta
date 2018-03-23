@@ -75,12 +75,18 @@
 		</div>
 	</div>
 
-	<div class="c_formulaire">
-		<div class="c_mail">
-			<input type="text" name="mail" placeholder="Adresse e-mail">
-			<input type="text" name="subject" placeholder="Sujet du message">
+	<formulaire>
+		<div class="c_formulaire">
+			<div class="c_mail">
+				<input class="c_input" type="text" name="mail" placeholder="Adresse e-mail">
+				<input class="c_input" type="text" name="subject" placeholder="Sujet du message">
+			</div>
+			<textarea class="c_area" placeholder="Message, écrire ici..."></textarea>
+			<form>
+				<input class="c_envoyer" type="submit" name="envoyer" value=" Envoyer ">
+			</form>
 		</div>
-	</div>
+	</formulaire>
 
 
 
