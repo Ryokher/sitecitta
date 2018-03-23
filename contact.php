@@ -88,9 +88,26 @@
 		</div>
 	</formulaire>
 
-
-
-
+	<footer>
+        <div class="bande"></div>
+        <div class="text">
+            <div class="textg">
+                <a href="#">Accueil</a>
+                <a href="#">Produits</a>
+            </div>
+            <div class="textd">
+                <a href="#">Contact</a>
+                <a href="#">A propos</a>
+            </div>
+        </div>
+        <div class="barreb"></div>
+        <div class="bas">
+                <a href="#"><img  src="img/logofb.png" alt="Notre Facebook" /></a>
+                <a  href="#"><img src="img/logotw.png" alt="Notre Twitter" /></a>
+                <a href="#"><img src="img/logol.png" alt="Notre Linkedin" /></a>
+        </div>
+        <div class="bande"></div>
+    </footer>
 
 </body>
 
