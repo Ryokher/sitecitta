@@ -1,9 +1,18 @@
 /*Page d'accueil*/
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/Intro.otf);
+}
+@font-face {
+    font-family: txtFont;
+    src: url(../fonts/txt.otf);
+}
 html,
 * {
     box-sizing: border-box;
     margin: 0;
     text-decoration: none;
+    font-family: 'txtFont', sans-serif;
 }
 .header{
     position: fixed;
@@ -13,25 +22,42 @@ html,
     padding-left: 10%;
     padding-right: 10%;
     height: 100px;
-    background-color: grey;
+    background-color: #edebf9;
     justify-content: space-around;
+    z-index: 5;
+}
+.logo{
+    width: 300px;
+}
+.logo img{
+    width: 100%;
+    height: auto;
 }
 .barre_back{
     height: 100px;
     z-index: -2;
 }
 .header_bt{
+    color: #8887a2;
     line-height: 100px;
     text-decoration: none;
     color: black;
+    font-family: 'titleFont', sans-serif;
 }
-
+.header a{
+    color: #8887a2;
+}
 .hvr_boutton:hover{
-    color: white;
+    color: black;
 }
 .h_banner{
-    height: 500px;
-    background-color: green;
+    width: 100%;
+    height: 445px;
+    background-image:url('../img/header.png');
+      background-attachment: fixed;
+    background-position:top;
+    background-size: 1920px auto;
+    background-repeat: no-repeat;
 }
 .h_conteneur_block{
     width: 100%;
@@ -40,19 +66,122 @@ html,
     flex-wrap: wrap;
     justify-content: center;
 }
-.h_block{
-    width: 20%;
-    min-width: 370px;
-    height: 384px;
-    display: flex;
-    flex-direction: column;
-}
 .h_block1{
     width: 20%;
     min-width: 370px;
     height: 384px;
     display: flex;
     flex-direction: column;
+}
+.iconliens {
+    background-color: #3C4145; 
+    width: 100%;
+    height: 100%;
+    background-position:center;
+    background-size: 383px auto;
+}
+#imgbc1{
+    background-image:url('../img/savon1.jpg');
+}
+#imgbc2{
+    background-image:url('../img/savon2.jpg');
+}
+#imgbc3{
+    background-image:url('../img/savon3.jpg');
+}
+#imgbc4{
+    background-image:url('../img/savon4.jpg');
+}
+#imgbc5{
+    background-image:url('../img/savon5.jpg');
+}
+#imgbc6{
+    background-image:url('../img/savon6.jpg');
+}
+#imgbc7{
+    background-image:url('../img/savon7.jpg');
+}
+#imgbc8{
+    background-image:url('../img/savon8.jpg');
+}
+#imgbc9{
+    background-image:url('../img/savon9.jpg');
+}
+#imgbc10{
+    background-image:url('../img/savon10.jpg');
+}
+.carricon {
+    opacity: 0;
+    transition:  all 0.8s ease-in-out; 
+    -moz-transition: all 0.8s ease-in-out; 
+    -webkit-transition:  all 0.8s ease-in-out; 
+    -o-transition:  all 0.8s ease-in-out;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carricon:hover {
+    opacity: 1;
+    transition:  all 0.8s ease-in-out; 
+    -moz-transition: all 0.8s ease-in-out; 
+    -webkit-transition:  all 0.8s ease-in-out; 
+    -o-transition:  all 0.8s ease-in-out; }
+
+
+.h_block{
+    width: 20%;
+    min-width: 370px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+}
+.h_block img{
+    width: 100%;
+    height: 100%;
+}
+.h_text_info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    opacity: 0;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s ease;
+}
+.h_text_info:hover{
+    opacity: 1;
+}
+.h_text_info p{
+    color: black;
+}
+.h_titre_produit{
+    text-align: center;
+    font-family: 'titleFont', sans-serif;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.h_coll_produit{
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.h_coll_info{
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
 }
 .h_about{
     width: 100%;
@@ -69,6 +198,7 @@ html,
     width: fit-content;
 }
 .h_titre{
+    font-family: 'titleFont', sans-serif;
     font-size: 40px;
     padding-bottom: 15px;
 }
@@ -79,11 +209,12 @@ html,
 
 }
 .h_desc{
+    color: black;
     text-align: center;
     width: 40%;
 }
 .h_barre_triangle{
-    background-color: grey;
+    background-color: #edebf9;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +227,7 @@ border-width: 60px 85px 0 85px;
 border-color: #ffffff transparent transparent transparent;
 }
 .h_how{
-    background-color: grey;
+    background-color: #edebf9;
     width: 100%;
     display: flex;
     align-items: center;
@@ -117,7 +248,7 @@ border-color: #ffffff transparent transparent transparent;
 footer {
     width: 100%;
     height: auto;
-    background-color: #333333;
+    background-color: #8887a2;
     color: white;
 }
 

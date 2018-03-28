@@ -1,12 +1,22 @@
 /* Page de contact */
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/Intro.otf);
+}
+@font-face {
+    font-family: txtFont;
+    src: url(../fonts/txt.otf);
+}
 html,
 * {
+    font-family: 'txtFont', sans-serif;
     box-sizing: border-box;
     margin: 0;
     text-decoration: none;
 }
 
 .header{
+    background-color: #edebf9;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -14,8 +24,17 @@ html,
     padding-left: 10%;
     padding-right: 10%;
     height: 100px;
-    background-color: grey;
     justify-content: space-around;
+}
+.header a{
+    color: #8887a2;
+}
+.logo{
+    width: 300px;
+}
+.logo img{
+    width: 100%;
+    height: auto;
 }
 .barre_back{
     height: 100px;
@@ -25,13 +44,15 @@ html,
     line-height: 100px;
     text-decoration: none;
     color: black;
+    font-family: 'titleFont', sans-serif;
 }
 
 .hvr_boutton:hover{
-    color: white;
+    color: black;
 }
 
 .c_social_medias {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -43,7 +64,7 @@ html,
     max-width: 100%;
     border: 1px;
     border-radius: 50%;
-    background-color: grey;
+background-color: #edebf9;
     margin: 11px;
     display: flex;
     justify-content: center;
@@ -66,7 +87,6 @@ html,
     display: flex;
     justify-content: center;
     margin-top: 15px;
-    font-size: 15px;
     width: 40%;
     text-align-last: center;
     text-align: justify;
@@ -79,13 +99,13 @@ html,
     font-size: 32px;
     font-weight: bold;
     width: 100%;
+    font-family: 'titleFont', sans-serif;
 }
 
 .c_subtitle1 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    font-size: 12px;
     font-weight: bold;
     width: 40%;
     text-align: justify;
@@ -95,8 +115,7 @@ html,
 .c_subtitle2 {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
-    font-size: 12px;
+    margin-top: 30px;
     font-weight: bold;
     width: 40%;
     text-align-last: center;
@@ -106,7 +125,6 @@ html,
 .c_desc {
     display: flex;
     justify-content: center;
-    font-size: 12px;
     width: 40%;
     text-align: justify;
     text-align-last: center;
@@ -208,7 +226,7 @@ textarea {
 footer {
     width: 100%;
     height: auto;
-    background-color: #333333;
+    background-color: #8887a2;
     color: white;
 }
 

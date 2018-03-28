@@ -3,18 +3,18 @@
 
 <head>
 	<meta charset="utf-8" />
-    <title>Contact</title>
+    <title>CONTACT</title>
 </head>
 
 <body>
     <header>
         <div class="header">
             <link href="css/contact.css" rel="stylesheet">
-            <a class="hvr_boutton header_bt" href="#">ACCUEIL</a>
-            <a class="hvr_boutton header_bt" href="#">PRODUITS</a>
-            <a class="hvr_boutton header_bt" href="#">LE LOGO</a>
-            <a class="hvr_boutton header_bt" href="#">CONTACT</a>
-            <a class="hvr_boutton header_bt" href="#">A PROPOS</a>
+            <a class="hvr_boutton header_bt" href="home.php">HOME</a>
+            <a class="hvr_boutton header_bt" href="vitrine.php">PRODUCTS</a>
+            <a class="hvr_boutton header_bt logo" href="#"><img src="img/cittacdpp1.png"/></a>
+            <a class="hvr_boutton header_bt" href="contact.php">CONTACT</a>
+            <a class="hvr_boutton header_bt" href="aboutus.php">ABOUT US</a>
         </div>
         <div class="barre_back"></div>
     </header>
@@ -102,9 +102,6 @@
         </div>
         <div class="barreb"></div>
         <div class="bas">
-                <a href="#"><img  src="img/logofb.png" alt="Notre Facebook" /></a>
-                <a  href="#"><img src="img/logotw.png" alt="Notre Twitter" /></a>
-                <a href="#"><img src="img/logol.png" alt="Notre Linkedin" /></a>
         </div>
         <div class="bande"></div>
     </footer>
